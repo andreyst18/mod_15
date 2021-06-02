@@ -27,7 +27,7 @@ p,
     font-size: 2rem;
 }
 
-.section {
+section {
     width: 1920px;
     padding: 0;
 }
@@ -38,25 +38,14 @@ p,
     padding: 0;
 }
 
-/*
-.section_header {
-    height: 118px;
-    background: #EEEFF1;
-}
-
 .header {
-    height: 582px;
-    background: #EEEFF1;
-}*/
-
-.section_one {
     height: 700px;
     background: #EEEFF1;
 } 
 
 
-.logo_menu,
-.write_me {
+.header__logo-menu,
+.header__design-layout {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -66,14 +55,30 @@ p,
     margin-top: 57px;
 }
 
-.write_me {
-    margin-bottom: 146px;
+.nav__menu-link, .nav__main-link {
+    padding-right: 42px;
 }
 
-.menu {
+.header__design-layout {
+    margin-bottom: 146px;
+    margin-top: 162px;
+}
+
+.header__menu {
     padding: 0;
     margin-top: 79px;
-    margin-left: 388.4px;
+    margin-left: 440px;
+}
+
+.header__text {
+    margin-left: 153.2px;
+    padding-left: 0px;
+}
+
+.nav__main-link {
+    color: #34547A;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 
@@ -82,17 +87,16 @@ p,
 }
 
 
-.menu li {
+.header__menu li {
     display: inline-flex;
     flex-direction: row;
     list-style-type: none;
     text-decoration: none;
     border: 0;
     outline: none;
-    margin-right: 36px;   
 }
 
-.menu__link  {
+.nav__menu-link  {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 1rem;
@@ -120,16 +124,12 @@ p,
     font-size: 1.5rem;
 }
 
-.row_2 {
-    margin-top: 162px;
-}
-
 p,
 h1 {
     margin-bottom: 60px;
 }
 
-.button_write {
+.button-write {
     width: 225px;
     height: 65px;
     background: #34547A;
@@ -137,7 +137,7 @@ h1 {
     border: none;
 }
 
-.section_two {
+.text-about-me {
     height: 359px;
     background-color: #E5E5E5;;
 }
@@ -188,22 +188,19 @@ h2 {
     margin-bottom: 100px;
 }
 
-#main-link {
-    color: #34547A;
-    font-weight: 500;
-}
+
 
 .section_two {
     height: 359px;
     background-color: #E5E5E5;
 }
 
-.row_3 {
+.text-about-me__title {
     text-align: center;
     padding-top: 112px;
 }
 
-.about_me_text {
+.text-about-me__text {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
@@ -211,19 +208,20 @@ h2 {
     padding-bottom: 100px;
 }
 
-.section_three {
+.projects {
     background-color: #34547A;
     height: 250px;
     display: flex;
     align-items: center;
 }
 
-.logo_projects {
+.projects__logo {
     width: 141px;
     height: 50px;
 }
 
-.section_four {
+
+.skills {
     height: 653px;
     background-color: #E5E5E5;
     max-height: 1440px;
@@ -233,7 +231,7 @@ h2 {
     width: 445px;
 }
 
-.progress-bar {
+.skills__progress-bar {
 	width: 100%;
 	background-color: #C4C4C4;
     height: 4px;
@@ -246,16 +244,20 @@ h2 {
     width: 350px;
 }
 
-.skill {
+.skills__item {
     margin-top: 29.76px;
     margin-bottom: 19.88px;
 }
 
-.my_skills {
+.skills__title {
     margin-top: 204px;
 }
 
-.face {
+.progress-bar-fill {
+    width: 79%;
+}
+
+.my-foto {
     width: 555px;
     height: 450px;
     margin-top: 102px;
@@ -271,24 +273,24 @@ h2 {
 }
 
 
-.section_five {
+.workprocess {
     height: 1004px;
     background-color: #EEEFF1;
 }
 
-.how_i_work {
+.workprocess__text {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
 }
 
-.section_six {
+.images-area {
     height: 1280px;
     background-color: #E5E5E5;
 }
 
-.workflow_line_one {
+.images-area__workflow {
     margin-top: 28px;
     display: flex;
     flex-direction: row;
@@ -303,7 +305,7 @@ h2 {
     padding-left: 0px;    
 }
 
-.workflow_img {
+.workflow-img {
     height: 480px;
     width: 480px;
 }
@@ -332,22 +334,22 @@ h2 {
     margin-right: 15px;
 }
 
-.section_seven {
+.do-you-want-website {
     height: 762px;
     background-color: #EEEFF1;
 }
 
-.form {
+.do-you-want-website__form {
     display: flex;
     justify-content: center
 }
 
-.form h2 {
+.do-you-want-website__form h2 {
     margin-top: 100px;
     margin-bottom: 0px;
 }
 
-.form p {
+.do-you-want-website__form p {
     margin-top: 50px;
     text-align: center;
     font-style: 'Roboto';
@@ -356,7 +358,7 @@ h2 {
     font-size: 16px;
 }
 
-.your_name, .your_email {
+.do-you-want-website__your-name, .do-you-want-website__your-email {
     width: 255px;
     height: 50px;
     font-family: 'Roboto';
@@ -368,7 +370,7 @@ h2 {
     border: none;
 }
 
-.message {
+.do-you-want-website__message {
     margin-top: 20px;
     width: 540px;
     height: 175px;
@@ -381,7 +383,7 @@ h2 {
     border: none;
 }
 
-.send {
+.do-you-want-website__message__send {
     width: 190px;
     height: 55px;
     margin-top: 50px;
@@ -397,12 +399,12 @@ h2 {
     color: #FFFFFF;
 }
 
-.section_eight {
+.footer {
     height: 151px;
     background-color: #34547A;
 }
 
-.name_footer {
+.footer__name {
     margin-top: 50px;
     font-family: 'Roboto';
     font-weight: 500;
@@ -411,7 +413,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.copyright {
+.footer__copyright {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -422,7 +424,7 @@ h2 {
 
 }
 
-.vk {
+.footer__vk-logo {
     display: flex;
     justify-content: flex-end;
     width: 175px;
